@@ -1,3 +1,7 @@
 adapted from example of simple convolutional neural net example from tensorflow documentation
 used with all permissions witheld for open source evaluation. written in python 
 implementing tensorflow.
+
+USE: python3 cnn_mnist.py
+
+note: training for neural net takes ~1 hour on 2015 MBP with 2.5 GhZ i7 processor
