@@ -23,8 +23,16 @@ def cnn_model_fn(features, labels, mode):
 
 	pool1 = tf.layers.max_pooling2d(inputs=conv1, pool_size=[2,2], strides=2)
 
-	conv2 = tf.layers.conv2d(
+	drop1 = tf.layers.dropout(
 		inputs=pool1,
+		rate = 0.5,
+		noise_shape=None,
+		seed=None,
+		training=False,
+		name=None)
+
+	conv2 = tf.layers.conv2d(
+		inputs=drop1,
 		filters=64,
 		kernel_size=[5, 5],
 		padding="same",
