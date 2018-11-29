@@ -5,3 +5,9 @@ implementing tensorflow.
 USE: python3 cnn_mnist.py
 
 note: training for neural net takes ~1 hour on 2015 MBP with 2.5 GhZ i7 processor
+
+general architecture of this CNN:
+
+convolutional layer 1 -> pooling layer 1 -> dropout layer(50% dropout) ->
+convolutional layer 2 -> pooling layer 2 -> flattening layer -> 
+dense layer -> convolutional layer 1

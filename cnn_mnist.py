@@ -28,7 +28,7 @@ def cnn_model_fn(features, labels, mode):
 		rate = 0.5,
 		noise_shape=None,
 		seed=None,
-		training=False,
+		training=mode==tf.estimator.ModeKeys.TRAIN,
 		name=None)
 
 	conv2 = tf.layers.conv2d(
