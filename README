@@ -11,3 +11,8 @@ general architecture of this CNN:
 convolutional layer 1 -> pooling layer 1 -> dropout layer(50% dropout) ->
 convolutional layer 2 -> pooling layer 2 -> flattening layer -> 
 dense layer -> convolutional layer 1
+
+gan architecture:
+generative vs. advesary
+vanilla GAN
+
